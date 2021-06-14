@@ -1,0 +1,5 @@
+venv
+conf/database.ini
+tmp
+.idea
+

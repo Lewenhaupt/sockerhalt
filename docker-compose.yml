@@ -1,0 +1,18 @@
+version: "3"
+services:
+ db:
+   image: postgres
+   environment:
+     - POSTGRES_USER=socker
+     - POSTGRES_PASSWORD=sockerhalt
+     - POSTGRES_DB=sockerhalt
+   ports:
+     - "5432:5432"
+   volumes:
+     - pgdata:/var/lib/postgresql/data
+ pgadmin:
+   image: thajeztah/pgadmin4
+   ports:
+     - "5050:5050"
+volumes:
+ pgdata:
